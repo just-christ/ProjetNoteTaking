@@ -22,7 +22,7 @@ public class NoteTakingApp extends Application {
         Scene scene = new Scene(root);
      
         stage.setScene(scene);
-        stage.setTitle("P'Note-Taking Application v1.0.0");
+        stage.setTitle("Application de Prise de Notes v1.0.0");
         stage.setResizable(false);
         stage.show();
     }
@@ -31,7 +31,7 @@ public class NoteTakingApp extends Application {
     public void init() throws Exception {
         connection = DatabaseConnection.getConnection();
         if (connection == null) {
-            throw new RuntimeException("Unable to establish a database connection.");
+            throw new RuntimeException("Impossible d'établir une connexion à la base de données.");
         }
     }
     
